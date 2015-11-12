@@ -6,6 +6,42 @@
 
 <?php get_template_part('templates/page', 'header'); ?>
 
+<!-- Fixed navbar -->
+ <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <div class="small-logo-container">
+         <!-- <div class="logoSmall"></div> -->
+         <div class="small-logo"></div>
+       </div>
+     </div>
+     <div class="navbar-collapse collapse">
+       <!-- <ul class="nav navbar-nav navbar-right">
+         <li class="active"><a href="#">Active</a></li>
+         <li><a href="#">Link</a></li>
+         <li><a href="#">Link</a></li>
+         <li><a href="#">Link</a></li>
+       </ul> -->
+
+       <?php
+        $args = array(
+          'menu'  => 'head-menu',
+          // 'menu_class' => 'nav navbar-nav navbar-right',
+          'container' => 'false',
+          'items_wrap' => '<ul class="active nav navbar-nav navbar-right">%3$s</ul>'
+          );
+        wp_nav_menu($args);
+      ?>
+     </div><!--/.nav-collapse -->
+   </div>
+ </div>
+
  <div class="container-fluid big-logo-row">
    <!-- <div class="container">
      <div class="row">

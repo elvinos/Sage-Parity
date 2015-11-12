@@ -9,6 +9,7 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
+
 $sage_includes = [
   'lib/utils.php',                 // Utility functions
   'lib/init.php',                  // Initial theme setup and constants
@@ -18,7 +19,10 @@ $sage_includes = [
   'lib/assets.php',                // Scripts and stylesheets
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
+  'lib/menu-item-custom-fields/menu-item-custom-fields.php',
+  'lib/wp_bootstrap_navwalker.php',  //Custom Menu
 ];
+
 
 foreach ($sage_includes as $file) {
   if (!$filepath = locate_template($file)) {
