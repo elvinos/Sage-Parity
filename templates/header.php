@@ -8,8 +8,8 @@
             <span class="icon-bar"></span>
           </button>
           <div class="small-logo-container">
-            <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"></a>
-            <div class="small-logo"></div>
+            <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>">
+            <div class="small-logo"></div></a>
           </div>
 
         </div>
@@ -29,3 +29,6 @@
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
+
+    <div class="overlay">
+    </div>
