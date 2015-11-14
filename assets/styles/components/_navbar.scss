@@ -20,11 +20,7 @@ $small-logo-padding: 2px; // of bottom padding to look nice
     padding-right: 15px;
     padding-left: 15px;
     border-top: 0px solid transparent;
-    box-shadow: 0 5px 0 0 $brand-secondary;
-}
-
-.navbar-nav{
-  margin: 0px -15px;
+    box-shadow: 0 0 0 0 $brand-secondary;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
