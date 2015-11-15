@@ -8,11 +8,19 @@ $small-logo-padding: 2px; // of bottom padding to look nice
 /* *********************************
    Some Style Overrides on Bootstrap
   ********************************** */
+
+#NavContain {
+  z-index: 1;
+  height: $navbar-height;
+  margin-bottom: 10px;
+  background:$brand-primary;
+}
+
 .navbar-inverse {
-  background      : rgba(11, 49, 92 ,0);
+  z-index: 100;
+  background      : $brand-primary;
   border-bottom   :none;
   // background-color: $brand-secondary;
-  box-shadow: 0 3px 0 0 $brand-secondary;
 }
 
 .navbar-collapse {
@@ -152,6 +160,59 @@ ul.nav {
   padding: 0;
 }
 
+
+/* *********************************
+           Nav-bar  Burger
+  ********************************** */
+
+  .navbar-toggle {
+    border: none;
+    background: transparent !important;
+
+    &:hover {
+      background: transparent !important;
+    }
+
+    .icon-bar {
+      width: 22px;
+      transition: all 0.2s;
+    }
+    .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+    .middle-bar {
+      opacity: 0;
+    }
+    .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 10% 90%;
+    }
+
+    &.collapsed {
+      .top-bar {
+        transform: rotate(0);
+      }
+      .middle-bar {
+        opacity: 1;
+      }
+      .bottom-bar {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 32, 32, 0.98);
+  z-index: 50;
+  display: none;
+  overflow-y: scroll;
+}
 /* *********************************
            Toolbar Logo
   ********************************** */
@@ -228,4 +289,18 @@ ul.nav {
       font-size: 12em;
     }
   }
+}
+
+#carousel {
+  height: 100vh;
+  padding: 0;
+}
+
+.slider-size {
+height: 100vh !important ;/* This is your slider height */
+}
+.carousel {
+position: absolute;
+width:100%;
+margin:0 auto; /* center your carousel if other than 100% */
 }

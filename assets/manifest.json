@@ -6,6 +6,12 @@
       ],
       "main": true
     },
+    "home.js": {
+      "files": [
+        "scripts/home.js",
+      ],
+      "main": true
+    },
     "main.css": {
       "files": [
         "styles/main.scss"

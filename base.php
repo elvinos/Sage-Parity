@@ -20,7 +20,7 @@ use Roots\Sage\Wrapper;
       // Changed container to container-fluid for marigin issues
     ?>
     <div class="wrap container-fluid" role="document">
-      <div class="content row">
+      <!-- <div class="content row"> -->
         <main class="main" role="main">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
@@ -29,7 +29,7 @@ use Roots\Sage\Wrapper;
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
-      </div><!-- /.content -->
+      <!--</div> /.content -->
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
