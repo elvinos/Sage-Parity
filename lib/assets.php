@@ -74,10 +74,10 @@ function assets() {
 
   wp_enqueue_script('modernizr', asset_path('scripts/modernizr.js'), [], null, true);
 
-    if ( is_front_page() ) {
-    	wp_enqueue_script( 'home_js', asset_path('scripts/home.js'), ['jquery'], null, true );
-        // This is the blog posts index
-      };
+    // if ( is_front_page() ) {
+    // 	wp_enqueue_script( 'home_js', asset_path('scripts/home.js'), ['jquery'], null, true );
+    //     // This is the blog posts index
+    //   };
 
     wp_enqueue_script('sage_js', asset_path('scripts/main.js'), ['jquery'], null, true);
 }
